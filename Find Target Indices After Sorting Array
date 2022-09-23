@@ -1,0 +1,25 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var targetIndices = function(nums, target) {
+         let n = nums.length;
+  for (let i = 0; i < n; i++) {
+    for (let j = i; j < n; j++) {
+      if (nums[i] > nums[j]) {
+        let temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+      }
+    }
+  }
+    
+    
+    let newArray =[]
+    for(let i=0;i<nums.length;i++) {
+        if(nums[i] === target)
+            newArray.push(i)
+    }
+    return newArray;
+};
