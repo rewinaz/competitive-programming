@@ -7,9 +7,7 @@ var moveZeroes = function(nums) {
     let temp;
     
     while(l<r) {
-        if(nums[l] === 0&&nums[r]===0) {
-            r--;
-        }else if(nums[l] === 0){
+        if(nums[l] === 0){
             swap(nums,l,r)
             r--;
             l--;
