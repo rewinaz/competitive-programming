@@ -8,15 +8,15 @@ var moveZeroes = function(nums) {
     
     while(l<r) {
         if(nums[l] === 0){
-            swap(nums,l,r)
+            // swap(nums,l,r)
+            nums.splice(l,1)
+            nums.push(0)
             r--;
             l--;
         }else {
             l++;
         }
-        
     }
-    console.log(nums)
 };
 
 
