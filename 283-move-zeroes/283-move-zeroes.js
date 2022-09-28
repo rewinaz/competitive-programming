@@ -12,6 +12,7 @@ var moveZeroes = function(nums) {
         }else if(nums[l] === 0){
             swap(nums,l,r)
             r--;
+            l--;
         }else {
             l++;
         }
