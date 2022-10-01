@@ -15,8 +15,6 @@ class Solution:
                 last_fruit_count+=1
             else:
                 last_fruit_count = 1
-            
-            if fruits[i] != last_fruit:
                 second_last_fruit = last_fruit
                 last_fruit = fruits[i]
             max_fruit_count = max(max_fruit_count, current_max)
